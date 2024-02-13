@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Etch-A-Sketch</h1>
+    <div class="grid">
+
+    </div>
+    <div class="controllers">
+        <input type="color" class="color-selector">
+
+        <div>
+            <button id="color-mode">Color Mode</button>
+            <button id="rainbow-mode">Rainbow Mode</button>
+            <button id="eraser-mode">Erser Mode</button>
+        </div>
+
+    </div>
+
+
+    <div>
+        <form action="javascript:updateDimentions()">
+            <label for="dimentions">Diementions </label>
+            <input type="number" name="dimentions" id='dimentions-input' max="100" min="2">
+            <button id="update-dimentions-btn">update dimentions</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+
+</html>

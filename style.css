@@ -1,0 +1,50 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ccc;
+}
+
+h1 {
+    color: white;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+
+    height: 70vh;
+    width: 70vh;
+    border: 3px solid black;
+}
+
+.controllers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+button {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+input {
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+}
+
+.color-selector {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+}

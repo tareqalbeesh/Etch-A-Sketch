@@ -65,10 +65,17 @@ function generateCells(size) {
     height: 70vh;
     width: 70vh;
     border: 3px solid Black;`;
+    //removing old children 
+    let child = grid.lastElementChild;
+    while (child) {
+        grid.removeChild(child);
+        child = grid.lastElementChild;
+    }
     for (let i = 0; i < size * size; i++) {
         let cell = document.createElement("div")
         cell.style.backgroundColor = 'white'
         cell.addEventListener('mouseover', () => {
+            cell.style.backgroundColor = "white";
             if (mouseDown)
                 cell.style.backgroundColor = getColor();
         })
